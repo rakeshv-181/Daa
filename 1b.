@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int n, i, j, counter = 0;
+    scanf("%d", &n);
+
+    if (n == 1)
+    {
+        counter++;
+    }
+    else
+    {
+        for (i = 1; i <= n; i++)
+        {
+            for (j = 1; j <= n; j++)
+            {
+                counter++;
+                counter++;
+                break;
+            }
+        }
+    }
+
+    printf("%d", counter);
+    return 0;
+}
